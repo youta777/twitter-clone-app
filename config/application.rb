@@ -31,5 +31,6 @@ module TwitterCloneApp
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    Rails.application.config.assets.unknown_asset_fallback = true
   end
 end
