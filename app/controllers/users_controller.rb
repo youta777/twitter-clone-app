@@ -9,7 +9,9 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  # ユーザ新規登録ページ
   def new
+    @user = User.new
   end
 
   def create
