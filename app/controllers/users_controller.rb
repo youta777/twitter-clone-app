@@ -4,7 +4,9 @@ class UsersController < ApplicationController
     @users = User.all.page(params[:page])
   end
 
+  # ユーザ詳細ページ
   def show
+    @user = User.find(params[:id])
   end
 
   def new
